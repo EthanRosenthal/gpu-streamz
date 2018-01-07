@@ -4,6 +4,7 @@ Live GPU monitoring with [streamz](https://github.com/mrocklin/streamz)
 
 ![mov](monitor.gif)
 
+This works by periodically parsing the output of `nvidia-smi` for GPU utilization and memory usage and streaming the results. 
 
 ## Installation
 
