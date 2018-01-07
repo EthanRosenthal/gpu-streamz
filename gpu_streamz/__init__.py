@@ -69,7 +69,10 @@ def _make_df(tup):
 
 
 class GPUStream(DataFrame):
-
+    """
+    Reformatted version of the Random streamz dataframe.
+    https://github.com/mrocklin/streamz/blob/master/streamz/dataframe/core.py
+    """
 
     def __init__(self, freq='5ms', interval='100ms', dask=False):
         if dask:
@@ -116,4 +119,5 @@ class GPUMonitor:
         self.stream = GPUStream(freq=freq, interval=interval, dask=dask)
 
     def start(self):
-        return self.stream.plot(kind='line', ylim=(0, 100), title='GPU Monitor')
+        return self.stream.plot(kind='line', ylim=(0, 100), 
+                                title='GPU Monitor')
