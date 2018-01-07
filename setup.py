@@ -5,7 +5,7 @@ from setuptools import setup
 
 
 setup(name='gpu_streamz',
-      version='0.0.1',
+      version='0.0.2',
       description='Live GPU monitoring with streamz',
       url='http://github.com/EthanRosenthal/gpu-streamz/',
       maintainer='Ethan Rosenthal',
